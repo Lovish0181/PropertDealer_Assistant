@@ -1,4 +1,4 @@
-package Signup;
+package Developer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +12,8 @@ public class Main extends Application
  public void start(@SuppressWarnings("exports") Stage primaryStage) 
    {
 		try {
-				Parent root=(Parent) FXMLLoader.load(getClass().getResource("Signup_Form.fxml")); 
-				Scene scene = new Scene(root,700,500);
+				Parent root=(Parent) FXMLLoader.load(getClass().getResource("Developer_Form.fxml")); 
+				Scene scene = new Scene(root,1000,800);
 				//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 				primaryStage.setScene(scene);
 				primaryStage.show();

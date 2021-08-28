@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="800.0" minWidth="1000.0" style="-fx-background-color: #2f2b43;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Developer.Developer_FormController">
+   <children>
+      <Text fill="WHITE" layoutX="638.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech enthusiast, having decent proficiency in">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="638.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oriented Programming(OOP). I am equipped">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="639.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" competencies required in modern digital era">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="642.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="coginitive load management capabilities.">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="641.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strong operations Professionals with a Bachelor">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="638.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Computer Engineering from Thapar Institute of ">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="641.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Engineering and Technology.">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Snapchat-1630330854.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="639.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java,Full Stack Web Development,C++,Object">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="637.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" with a right blend of technical and behavioral">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="641.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with the belief to value creation mindset and ">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="639.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" of Technology focused in Electronics and">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="149.0" layoutY="639.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="Lovish Jindal">
+         <font>
+            <Font name="Cambria Bold Italic" size="50.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="241.0" layoutY="687.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="Developer">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f2b43" height="50.0" layoutY="707.0" stroke="#6b6b6b" strokeType="INSIDE" width="599.0" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="343.0" layoutY="713.0" onMouseClicked="#linkedin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngkey.com-linkedin-icon-png-158346.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="219.0" layoutY="713.0" onMouseClicked="#whatsapp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@76995-whatsapp-message-android-internet-free-clipart-hq.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="281.0" layoutY="713.0" onMouseClicked="#instagram" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngkey.com-instagram-logo-png-695436.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="693.0" layoutY="114.0" stroke="#fcfcfc" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="About me">
+         <font>
+            <Font name="Cambria Bold" size="50.0" />
+         </font>
+      </Text>
+      <Text fill="#68479f" layoutX="776.0" layoutY="155.0" stroke="#68479f" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="20 years" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="696.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngkey.com-phone-logo-png-113921.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="754.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="70873-09381">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="154.0" layoutY="712.0" onMouseClicked="#facebook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngkey.com-facebook-logo-png-4258.png" />
+         </image>
+      </ImageView>
+      <Text fill="#68479f" layoutX="629.0" layoutY="588.0" stroke="#68479f" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="My Other Projects:-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="628.0" layoutY="738.0" strokeType="OUTSIDE" strokeWidth="0.0" text="maintaining the data of hawkers and customers" />
+      <Text fill="WHITE" layoutX="630.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Work Services is a three module Based website " />
+      <Text fill="WHITE" layoutX="630.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="that help end users(customers) to find workers, service" />
+      <Text fill="#f8f8f8" layoutX="631.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text="man or any type of labour within their locality." />
+      <Text fill="#f2f2f2" layoutX="631.0" layoutY="712.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Newspaper Agency is Java Project Based on" />
+      <Text fill="WHITE" layoutX="629.0" layoutY="764.0" strokeType="OUTSIDE" strokeWidth="0.0" text="manually." />
+      <Hyperlink fx:id="dash" layoutX="881.0" layoutY="11.0" onAction="#dodashboard" text="Back to Dashboard" underline="true">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="409.0" layoutY="712.0" onMouseClicked="#github" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@github.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
