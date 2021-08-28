@@ -1,4 +1,4 @@
-package FindProperty1;
+package Dashboard;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +12,8 @@ public class Main extends Application
  public void start(@SuppressWarnings("exports") Stage primaryStage) 
    {
 		try {
-				Parent root=(Parent) FXMLLoader.load(getClass().getResource("FindProperty1_Form.fxml")); 
-				Scene scene = new Scene(root,800,700);
+				Parent root=(Parent) FXMLLoader.load(getClass().getResource("Dashboard_Form.fxml")); 
+				Scene scene = new Scene(root,1000,700);
 				//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 				primaryStage.setScene(scene);
 				primaryStage.show();
