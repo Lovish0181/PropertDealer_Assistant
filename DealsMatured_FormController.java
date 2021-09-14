@@ -164,11 +164,10 @@ public class DealsMatured_FormController {
     int bal;
     @FXML
     void dobalamt(KeyEvent event) {
-    	String tamt=txttotal.getText();
-    	String advamt=txtadvance.getText();
-    	  bal=Integer.parseInt(tamt)-Integer.parseInt(advamt);
-    	  System.out.println("qwjkj");
-    	 txtbalance.setText(String.valueOf(bal));
+    	int tamt=Integer.parseInt(txttotal.getText());
+    	int advamt=Integer.parseInt(txtadvance.getText());
+    	bal=tamt-advamt;
+    	txtbalance.setText(String.valueOf(bal));
     }
     
     Connection con;

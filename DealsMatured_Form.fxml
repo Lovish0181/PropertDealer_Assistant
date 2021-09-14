@@ -9,24 +9,24 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minHeight="500.0" minWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DealsMatured.DealsMatured_FormController">
+<AnchorPane minHeight="500.0" minWidth="450.0" style="-fx-background-color: #2f2b43;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DealsMatured.DealsMatured_FormController">
    <children>
-      <Text fill="#000fee" layoutX="66.0" layoutY="51.0" stroke="#000fee" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="DEALS MATURED">
+      <Text fill="WHITE" layoutX="66.0" layoutY="51.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="MATURED DEALS">
          <font>
             <Font name="Cambria Bold" size="40.0" />
          </font>
       </Text>
-      <Button fx:id="btnsave" layoutX="46.0" layoutY="437.0" mnemonicParsing="false" onAction="#dosave" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #000fee;" text="Save" textFill="WHITE">
+      <Button fx:id="btnsave" layoutX="46.0" layoutY="437.0" mnemonicParsing="false" onAction="#dosave" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #68479f;" text="Save" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btnchange" layoutX="169.0" layoutY="437.0" mnemonicParsing="false" onAction="#dochange" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #000fee;" text="Change" textFill="WHITE">
+      <Button fx:id="btnchange" layoutX="169.0" layoutY="437.0" mnemonicParsing="false" onAction="#dochange" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #68479f;" text="Change" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btnremove" layoutX="293.0" layoutY="437.0" mnemonicParsing="false" onAction="#doremove" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #000fee;" text="Remove" textFill="WHITE">
+      <Button fx:id="btnremove" layoutX="293.0" layoutY="437.0" mnemonicParsing="false" onAction="#doremove" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #68479f;" text="Remove" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
@@ -37,43 +37,43 @@
       <TextField fx:id="txttotal" layoutX="214.0" layoutY="230.0" prefHeight="31.0" prefWidth="187.0" />
       <TextField fx:id="txtadvance" layoutX="213.0" layoutY="277.0" prefHeight="31.0" prefWidth="187.0" />
       <TextField fx:id="txtbalance" layoutX="213.0" layoutY="325.0" onKeyPressed="#dobalamt" prefHeight="31.0" prefWidth="187.0" />
-      <Label layoutX="42.0" layoutY="92.0" text="Buyer Contact/ID">
+      <Label layoutX="53.0" layoutY="92.0" text="Buyer Contact" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="45.0" layoutY="139.0" prefHeight="24.0" prefWidth="159.0" text="Seller Contact/ID">
+      <Label layoutX="56.0" layoutY="139.0" prefHeight="24.0" prefWidth="130.0" text="Seller Contact" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="67.0" layoutY="186.0" text="Property ID">
+      <Label layoutX="67.0" layoutY="186.0" text="Property ID" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="56.0" layoutY="234.0" text="Total Amount">
+      <Label layoutX="56.0" layoutY="234.0" text="Total Amount" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="58.0" layoutY="283.0" text="Advance Paid">
+      <Label layoutX="58.0" layoutY="283.0" text="Advance Paid" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="329.0" text="Balance Amount">
+      <Label layoutX="42.0" layoutY="329.0" text="Balance Amount" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="366.0" prefHeight="24.0" prefWidth="195.0" text="Date of Registration/">
+      <Label layoutX="27.0" layoutY="366.0" prefHeight="24.0" prefWidth="195.0" text="Date of Registration/" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="18.0" />
          </font>
       </Label>
       <DatePicker fx:id="dateregistration" layoutX="215.0" layoutY="373.0" prefHeight="31.0" prefWidth="187.0" />
-      <Label layoutX="29.0" layoutY="389.0" text="Ownership Transfer">
+      <Label layoutX="29.0" layoutY="389.0" text="Ownership Transfer" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="18.0" />
          </font>

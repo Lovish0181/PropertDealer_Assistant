@@ -136,24 +136,25 @@ public class Dashboard_FormController {
 
     @FXML
     void doproperty(ActionEvent event) throws IOException {
-    	FXMLLoader fxmlloader= new FXMLLoader(getClass().getResource("/FindProperty/FindProperty_Form.fxml"));
-    	Parent root=(Parent)fxmlloader.load();
-    	
-    	Stage stage=new Stage();
+
+		FXMLLoader fxmlloader= new FXMLLoader(getClass().getResource("/FindProperty1/FindProperty1_Form.fxml"));
+    	Parent root;
+		root = (Parent)fxmlloader.load();
+		Stage stage=new Stage();
     	stage.setScene(new Scene(root));
     	stage.show();
-
     }
 
     @FXML
     void doregistered(ActionEvent event) {
     	try {
-    		FXMLLoader fxmlloader= new FXMLLoader(getClass().getResource("/FindProperty1/FindProperty1_Form.fxml"));
-        	Parent root;
-    		root = (Parent)fxmlloader.load();
-			Stage stage=new Stage();
+	    	FXMLLoader fxmlloader= new FXMLLoader(getClass().getResource("/FindProperty/FindProperty_Form.fxml"));
+	    	Parent root=(Parent)fxmlloader.load();
+	    	
+	    	Stage stage=new Stage();
 	    	stage.setScene(new Scene(root));
 	    	stage.show();
+
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

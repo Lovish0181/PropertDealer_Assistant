@@ -9,34 +9,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerDemand.CustomerDemand_FormController">
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-color: #2f2b43;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerDemand.CustomerDemand_FormController">
    <children>
-      <Text fill="#000fee" fontSmoothingType="LCD" layoutX="93.0" layoutY="49.0" stroke="#000fee" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="CUSTOMER'S DEMAND">
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="24.0" layoutY="49.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="CUSTOMER'S REQUIREMENTS">
          <font>
             <Font name="Cambria Bold" size="40.0" />
          </font>
       </Text>
-      <Label layoutX="362.0" layoutY="264.0" text="Place">
+      <Label layoutX="362.0" layoutY="264.0" text="Place" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="86.0" layoutY="559.0" text="Record ID">
+      <Label layoutX="86.0" layoutY="559.0" text="Record ID" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="75.0" layoutY="261.0" text="Budget (Max)">
+      <Label layoutX="75.0" layoutY="261.0" text="Budget (Max)" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="68.0" layoutY="203.0" text="Property Types">
+      <Label layoutX="68.0" layoutY="203.0" text="Property Types" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="146.0" text="Customer Contact/ID">
+      <Label layoutX="41.0" layoutY="146.0" text="Customer Contact/ID" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="18.0" />
          </font>
@@ -46,27 +46,27 @@
             <Font name="Cambria Bold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="62.0" layoutY="389.0" text="Other Demands">
+      <Label layoutX="62.0" layoutY="389.0" text="Other Demands" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="92.0" layoutY="92.0" text="Record ID">
+      <Label layoutX="92.0" layoutY="92.0" text="Record ID" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="65.0" layoutY="329.0" text="Size (Sq. Yards)">
+      <Label layoutX="65.0" layoutY="329.0" text="Size (Sq. Yards)" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="301.0" text="Maximum">
+      <Label layoutX="265.0" layoutY="303.0" text="Maximum" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="437.0" layoutY="302.0" text="Minimum">
+      <Label layoutX="437.0" layoutY="302.0" text="Minimum" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="15.0" />
          </font>
@@ -74,12 +74,12 @@
       <TextField fx:id="txtrecord" layoutX="223.0" layoutY="557.0" prefHeight="31.0" prefWidth="315.0" />
       <ComboBox fx:id="comboptypes" editable="true" layoutX="225.0" layoutY="199.0" onAction="#docomboptypes" prefHeight="31.0" prefWidth="315.0" />
       <ComboBox fx:id="comborecord" layoutX="225.0" layoutY="87.0" onAction="#docomborecord" prefHeight="31.0" prefWidth="142.0" />
-      <Button fx:id="btnadd" layoutX="56.0" layoutY="493.0" mnemonicParsing="false" onAction="#doadd" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #000fee;" text="Add" textFill="WHITE">
+      <Button fx:id="btnadd" layoutX="56.0" layoutY="493.0" mnemonicParsing="false" onAction="#doadd" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #68479f;" text="Add" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btndelete" layoutX="437.0" layoutY="493.0" mnemonicParsing="false" onAction="#dodelete" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #000fee;" text="Delete" textFill="WHITE">
+      <Button fx:id="btndelete" layoutX="437.0" layoutY="493.0" mnemonicParsing="false" onAction="#dodelete" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #68479f;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
@@ -90,12 +90,12 @@
       <TextField fx:id="txtplace" layoutX="415.0" layoutY="261.0" prefHeight="31.0" prefWidth="125.0" />
       <TextField fx:id="txtbudget" layoutX="226.0" layoutY="258.0" prefHeight="31.0" prefWidth="125.0" />
       <TextField fx:id="txtcid" layoutX="224.0" layoutY="142.0" prefHeight="31.0" prefWidth="315.0" />
-      <Button fx:id="btnfetch" layoutX="438.0" layoutY="84.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #000fee;" text="Fetch" textFill="WHITE">
+      <Button fx:id="btnfetch" layoutX="438.0" layoutY="84.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #68479f;" text="Fetch" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="btnmodify" layoutX="243.0" layoutY="493.0" mnemonicParsing="false" onAction="#domodify" prefHeight="38.0" prefWidth="113.0" style="-fx-background-color: #000fee;" text="Modify" textFill="WHITE">
+      <Button fx:id="btnmodify" layoutX="243.0" layoutY="493.0" mnemonicParsing="false" onAction="#domodify" prefHeight="38.0" prefWidth="113.0" style="-fx-background-color: #68479f;" text="Modify" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="20.0" />
          </font>
