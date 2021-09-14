@@ -13,7 +13,7 @@
 <AnchorPane minHeight="700.0" minWidth="800.0" style="-fx-background-color: #2f2b43;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FindProperty1.FindProperty1_FormController">
    <children>
       <TableView fx:id="tblview" layoutX="13.0" layoutY="202.0" prefHeight="444.0" prefWidth="775.0" />
-      <Text fill="WHITE" layoutX="249.0" layoutY="50.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="FIND PROPERTY">
+      <Text fill="WHITE" layoutX="129.0" layoutY="50.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="FIND REGISTERED PROPERTY">
          <font>
             <Font name="Cambria Bold" size="40.0" />
          </font>
