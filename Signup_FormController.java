@@ -1,11 +1,9 @@
 package Signup;
 import java.net.URL;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -15,7 +13,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -44,7 +41,7 @@ import javafx.scene.control.TextField;
     	    private Button btnsignup;
     	    
     	    @FXML
-    	    private DatePicker dateDob;
+    	    private TextField txtaadhar;
 
 
 
@@ -71,38 +68,49 @@ import javafx.scene.control.TextField;
 	        	    	
 					}
 					pst.setString(2,txtpass.getText());
+					  String upperCaseChars = "(.*[A-Z].*)";
+					  String lowerCaseChars = "(.*[a-z].*)";
+					  String numbers = "(.*[0-9].*)";
+                      String specialChars = "(.*[@,#,$,%].*$)";
+					if(!pass.matches(upperCaseChars) || !pass.matches(lowerCaseChars) || !pass.matches(numbers) || !pass.matches(specialChars))
+					{
+						Alert alert3 = new Alert(AlertType.WARNING);
+	        	    	alert3.setTitle("Warning Message");
+	        	    	alert3.setContentText("Password must include Uppercase,Lowercase,Numbers and Special Characters");
+	        	    	alert3.showAndWait();
+					}
+					else
 	                if(pass.equals(pass1)==true)
 	    	    	{
 	    	    		Alert alert2 = new Alert(AlertType.WARNING);
 	        	    	alert2.setTitle("Warning Message");
 	        	    	alert2.setContentText("Password Confirmed");
 	        	    	alert2.showAndWait();
-	        	    	 pst.setString(3,txtphone.getText());
-	        	    	pst.setDate(4,Date.valueOf(dateDob.getValue()));
-	                   
-	        	    	pst.executeUpdate();
-	        	    	try{
-	             			  FXMLLoader fxmlloader= new FXMLLoader(getClass().getResource("/Login1/Login1_Form.fxml"));
-	             	        	Parent root=(Parent)fxmlloader.load();
-	             	        	
-	             	        	Stage stage=new Stage();
-	             	        	stage.setScene(new Scene(root));
-	             	        	stage.show();
+	        	    	pst.setString(3,txtphone.getText());
+	        	    	pst.setString(4,txtaadhar.getText());
+	          	        pst.executeUpdate();
+	          	      try{
+             			  FXMLLoader fxmlloader= new FXMLLoader(getClass().getResource("/Login/Login_Form.fxml"));
+             	        	Parent root=(Parent)fxmlloader.load();
+             	        	
+             	        	Stage stage=new Stage();
+             	        	stage.setScene(new Scene(root));
+             	        	stage.show();
 
-	             	            Scene scene1 = (Scene)btnsignup.getScene();
-	             	            scene1.getWindow().hide();
+             	            Scene scene1 = (Scene)btnsignup.getScene();
+             	            scene1.getWindow().hide();
 
-	             			}
-	             			catch(Exception e)
-	             			{
-	             				e.printStackTrace();
-	             			}
-	        	    	Alert alert = new Alert(AlertType.WARNING);
-	        	    	alert.setTitle("Warning Message");
-	        	    	alert.setHeaderText("ThankYou For Using Our Services");
-	        	    	alert.setContentText("Signed Up Successfully");
-	        	    	alert.showAndWait();
-	        	    	
+             			}
+             			catch(Exception e)
+             			{
+             				e.printStackTrace();
+             			}    
+	          	    		Alert alert = new Alert(AlertType.WARNING);
+	            	    	alert.setTitle("Warning Message");
+	            	    	alert.setHeaderText("ThankYou For Using Our Services");
+	            	    	alert.setContentText("Signed Up Successfully");
+	            	    	alert.showAndWait();
+
 	    	    	}
 	    	    	else
 	    	    	{
@@ -111,16 +119,16 @@ import javafx.scene.control.TextField;
 	        	    	alert1.setContentText("Incorrect Password");
 	        	    	alert1.showAndWait();
 	    	    	}
-
-                }catch (SQLException e) {
+					
+        	    	                }catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-
+            	
     	    }
     	    }
     	    @FXML
     	    void initialize() {
     	       con=Connect.getConnection();
-    	    }
+    	      }
     	}

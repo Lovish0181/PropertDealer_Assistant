@@ -1,4 +1,4 @@
-package ForgotPassword;
+package Signup;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +12,8 @@ public class Main extends Application
  public void start(@SuppressWarnings("exports") Stage primaryStage) 
    {
 		try {
-				Parent root=(Parent) FXMLLoader.load(getClass().getResource("Forgotpass_Form.fxml")); 
-				Scene scene = new Scene(root,450,500);
+				Parent root=(Parent) FXMLLoader.load(getClass().getResource("Signup_Form.fxml")); 
+				Scene scene = new Scene(root,700,500);
 				//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 				primaryStage.setScene(scene);
 				primaryStage.show();

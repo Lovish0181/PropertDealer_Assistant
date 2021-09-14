@@ -1,73 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Signup.Signup_FormController">
    <left>
       <AnchorPane minHeight="500.0" minWidth="300.0" style="-fx-background-color: #383351;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="94.0" layoutY="310.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" style="-fx-font-size: 25;" text="Welcome" />
-            <Circle fill="WHITE" layoutX="146.0" layoutY="187.0" radius="77.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
-            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="96.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="98.0" layoutY="310.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" style="-fx-font-size: 23;" text="Welcome" />
+            <Circle fill="#68479f" layoutX="146.0" layoutY="187.0" radius="77.0" stroke="#2f2b47" strokeLineCap="ROUND" strokeLineJoin="ROUND">
+               <effect>
+                  <DropShadow />
+               </effect></Circle>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="96.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@real-estate.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="86.0" layoutY="391.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" style="-fx-font-size: 25;" text="Real Estate" />
-            <Text fill="WHITE" layoutX="134.0" layoutY="352.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" style="-fx-font-size: 25;" text="to" />
+            <Text fill="WHITE" layoutX="22.0" layoutY="390.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" style="-fx-font-size: 23;" text="Property Dealer Manager" />
+            <Text fill="WHITE" layoutX="135.0" layoutY="352.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" style="-fx-font-size: 23;" text="to" />
          </children>
       </AnchorPane>
    </left>
    <center>
       <AnchorPane minHeight="500.0" minWidth="200.0" style="-fx-background-color: #2f2b47;" BorderPane.alignment="CENTER">
          <children>
-            <PasswordField fx:id="txtpass" layoutX="120.0" layoutY="234.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="73.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+            <PasswordField fx:id="txtpass" layoutX="122.0" layoutY="213.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="**********" style="-fx-background-color: #383351; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #68479f;-fx-text-inner-color: #ffffff;" />
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="75.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icons8-password-96.png" />
+                  <Image url="@padlock.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="76.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icons8-user-male-480.png" />
+                  <Image url="@user%20(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="136.0" pickOnBounds="true" preserveRatio="true">
+            <TextField fx:id="txtusername" layoutX="123.0" layoutY="156.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Username" style="-fx-background-color: #383351; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #68479f;-fx-text-inner-color: #ffffff;" />
+            <PasswordField fx:id="txtpass1" layoutX="122.0" layoutY="266.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="**********" style="-fx-background-color: #383351; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #68479f;-fx-text-inner-color: #ffffff;" />
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="76.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@user.png" />
+                  <Image url="@padlock.png" />
                </image>
             </ImageView>
-            <TextField fx:id="txtusername" layoutX="121.0" layoutY="188.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="158.0" text="Ready to Access? Enter your email." />
-            <PasswordField fx:id="txtpass1" layoutX="120.0" layoutY="282.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+            <Button fx:id="btnsignup" layoutX="121.0" layoutY="434.0" mnemonicParsing="false" onAction="#dosignup" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #68479f;" text="Signup" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font></Button>
+            <TextField fx:id="txtphone" layoutX="122.0" layoutY="319.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Phone Number" style="-fx-background-color: #383351; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #68479f;-fx-text-inner-color: #ffffff;" />
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="78.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icons8-password-96.png" />
+                  <Image url="@call.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnsignup" layoutX="122.0" layoutY="441.0" mnemonicParsing="false" onAction="#dosignup" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: black;" text="Signup" textFill="WHITE" />
-            <DatePicker fx:id="dateDob" layoutX="121.0" layoutY="332.0" minHeight="33.0" minWidth="170.0" prefHeight="33.0" prefWidth="190.0" promptText="Date-of-Birth" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
-            <TextField fx:id="txtphone" layoutX="122.0" layoutY="379.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Phone Number" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="78.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+            <Pane layoutX="97.0" layoutY="-86.0" prefHeight="200.0" prefWidth="200.0" rotate="41.6" style="-fx-background-color: #68479f; -fx-background-radius: 15;" />
+            <Label fx:id="a1" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="114.0" text="Ready to Access? Enter your deatails." textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="txtaadhar" layoutX="123.0" layoutY="372.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Aadhar Number" style="-fx-background-color: #383351; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #68479f;-fx-text-inner-color: #ffffff;" />
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="79.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@phone.png" />
+                  <Image url="@id-card.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="77.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@dob.png" />
-               </image>
-            </ImageView>
+            <Label fx:id="a2" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="71.0" text="Create your Account" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </center>

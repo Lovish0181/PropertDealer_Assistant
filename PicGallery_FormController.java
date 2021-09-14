@@ -59,8 +59,6 @@ public class PicGallery_FormController {
     @FXML
     private Button btnsave;
 
-    @FXML
-    private Button btnupdate;
 
     @FXML
     void docomboproperty(ActionEvent event) {
@@ -215,27 +213,6 @@ String pic4;
 		}
     }
 
-    @FXML
-    void doupdate(ActionEvent event) {
-
-		try {
-			pst=con.prepareStatement("Update gallery set pic1=?,pic2=?,pic3=?,pic4=? where pid=?");
-			pst.setString(5,comboproperty.getEditor().getText());
-			pst.setString(1,String.valueOf(pic1));
-			pst.setString(2,String.valueOf(pic2));
-			pst.setString(3,String.valueOf(pic3));
-			pst.setString(4,String.valueOf(pic4));
-			
-			int count=pst.executeUpdate();
-			if(count==0)
-				btnupdate.setText("Invalid");
-			else
-			btnupdate.setText("Updated");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		    }
     void fillproperty()
     {
     	ArrayList<String> pr=new ArrayList<String>();
